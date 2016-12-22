@@ -259,7 +259,7 @@ public class RCTCamera {
         switch (captureQuality) {
             case RCTCameraModule.RCT_CAMERA_CAPTURE_QUALITY_LOW:
                 videoSize = getSmallestSize(supportedSizes);
-                cm = CamcorderProfile.get(_cameraTypeToIndex.get(cameraType), CamcorderProfile.QUALITY_480P);
+                cm = CamcorderProfile.get(_cameraTypeToIndex.get(cameraType), CamcorderProfile.QUALITY_LOW);
                 break;
             case RCTCameraModule.RCT_CAMERA_CAPTURE_QUALITY_MEDIUM:
                 videoSize = supportedSizes.get(supportedSizes.size() / 2);
